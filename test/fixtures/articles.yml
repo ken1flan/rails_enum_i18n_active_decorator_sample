@@ -1,5 +1,4 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
   title: MyString
   content: MyText
@@ -9,3 +8,18 @@ two:
   title: MyString
   content: MyText
   status: 1
+
+draft_article:
+  title: 下書きの投稿のタイトル
+  content: 下書きの投稿の本文
+  status: <%= Article::STATUS_DRAFT %>
+
+public_article:
+  title: 公開中の投稿のタイトル
+  content: 公開中の投稿の本文
+  status: <%= Article::STATUS_PUBLIC %>
+
+article_disabled_by_admin:
+  title: 公開停止中の投稿のタイトル
+  content: 公開停止中の投稿の本文
+  status: <%= Article::STATUS_DISABLED_BY_ADMIN %>
