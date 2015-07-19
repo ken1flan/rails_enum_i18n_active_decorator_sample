@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.select :status, Article::STATUS_LABELS.invert %>
+    <%= f.select :status, @article.status_labels %>
   </div>
   <div class="actions">
     <%= f.submit %>

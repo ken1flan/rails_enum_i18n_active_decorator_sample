@@ -12,14 +12,14 @@ two:
 draft_article:
   title: 下書きの投稿のタイトル
   content: 下書きの投稿の本文
-  status: <%= Article::STATUS_DRAFT %>
+  status: draft
 
 public_article:
   title: 公開中の投稿のタイトル
   content: 公開中の投稿の本文
-  status: <%= Article::STATUS_PUBLIC %>
+  status: opened
 
 article_disabled_by_admin:
   title: 公開停止中の投稿のタイトル
   content: 公開停止中の投稿の本文
-  status: <%= Article::STATUS_DISABLED_BY_ADMIN %>
+  status: closed_by_admin

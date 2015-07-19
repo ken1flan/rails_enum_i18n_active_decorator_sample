@@ -1,0 +1,6 @@
+ja:
+  articles:
+    statuses:
+      draft: 下書き
+      opened: 公開中
+      closed_by_admin: 管理者により非公開中
